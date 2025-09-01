@@ -49,6 +49,12 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
 
+    // 專用於 Google Chrome 測試
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    },
+
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
@@ -64,10 +70,10 @@ export default defineConfig({
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    },
   ],
 
   /* Run your local dev server before starting the tests */
